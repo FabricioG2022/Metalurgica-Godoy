@@ -18,9 +18,19 @@
     padding-bottom: 15px;
 }
 
-.margin{
+.marginBanner {
     margin: 10px;
     padding-right: 15px;
+}
+
+.marginCamioneta {
+    margin: 10px;
+    padding-right: 20px;
+    transition: all 0.3s;
+}
+
+.marginCamioneta:hover {
+    transform: scale(1.1);
 }
 
 .navbar {
