@@ -41,7 +41,15 @@
     justify-content: space-around;
     max-width: 100vw;
 }
-
+/************************************************** BOOTSTRAP ***************************************/
+.navbar .navbar-expand-lg .bg-light {
+    background-color: #ffd07a;
+}
+.card {
+    background-color: #ffd07a;
+    margin-left: 50px;
+}
+/****************************************************BOOTSTRAP**************************************/
 .navbar ul {
     display: flex;
     flex-direction: row;
