@@ -23,23 +23,42 @@
                     alt="Camioneta empresa"></a>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg py-0">
+    <!--**************************************NAVBAR DE BOOTSTRAP CON DROP********************************-->
+    <nav class="navbar navbar-expand-lg bg-warning">
         <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="#">MENU</a> -->
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">MENU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./empresa.html">EMPRESA</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./productos.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCTOS
+                        </a>
+                        <!--*******************LISTA DESPLEGABLE DEL DROP CON LOS PRODUCTOS******************-->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Grilletes</a></li>
+                            <li><a class="dropdown-item" href="#">Pastecas</a></li>
+                            <li><a class="dropdown-item" href="#">Tensores</a></li>
+                            <li><a class="dropdown-item" href="#">Conectores</a></li>
+                            <li><a class="dropdown-item" href="#">Giratorios</a></li>
+                            <li><a class="dropdown-item" href="#">Ganchos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Otros productos</a></li>
+                        </ul>
+                        <!--********************FIN LISTA DESPLEGABLE DEL DROP*******************************-->
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./certificaciones.html">CERTIFICACIONES</a>
@@ -48,171 +67,143 @@
                         <a class="nav-link" href="./contacto.html">CONTACTO</a>
                     </li>
                 </ul>
+                <!--***************************************BUTTON SEARCH************************************-->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="BUSCAR" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                </form>
             </div>
         </div>
     </nav>
-    <!-- <nav class="navbar">
-        <ul>
-            <li><a href="./index.html">INICIO</a></li>
-            <li><a href="./empresa.html">EMPRESA</a></li>
-            <li><a href="./productos.html">PRODUCTOS</a></li>
-            <li><a href="./certificaciones.html">CERTIFICACIONES</a></li>
-            <li><a href="./contacto.html">CONTACTO</a></li>
-        </ul>
-    </nav> -->
     <main>
+        <!--***********************************************MAIN********************************************-->
         <section class="sectionMain">
-            <div class="container d-flex">
-                <div class="card mb-3 pt-3 ps-4 mt-4" style="max-width: 650px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 pt-3">
-                            <img src="./img/gen6.png" class="img-fluid rounded-start" alt="...">
+            <!--*******************************************SECCION PRIMER CARD*****************************-->
+            <section>
+                <div class="container d-flex justify-content-start ms-1">
+                    <div class="card mb-3 pt-3 ps-4 mt-4 bg-warning pb-3" style="max-width: 900px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 pt-3">
+                                <img src="./img/gen6.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nuestra historia</h5>
+                                    <p class="card-text">En 1993 comenzamos con la fabricación de herrajes navales,
+                                        desde
+                                        entonces hemos innovado y
+                                        ensayado diferentes tipos de productos. A partir del año 2001 y de acuerdo a las
+                                        necesidades
+                                        del mercado nacional, las actividades de desarrollo de la empresa se centraron
+                                        exclusivamente en
+                                        la fabricación de pastecas y demás herrajes, con el desafío de lograr la máxima
+                                        calidad
+                                        y
+                                        competir con las grandes marcas internacionales.</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Nuestra historia</h5>
-                                <p class="card-text">En 1993 comenzamos con la fabricación de herrajes navales, desde
-                                    entonces hemos innovado y
-                                    ensayado diferentes tipos de productos. A partir del año 2001 y de acuerdo a las
-                                    necesidades
-                                    del mercado nacional, las actividades de desarrollo de la empresa se centraron
-                                    exclusivamente en
-                                    la fabricación de pastecas y demás herrajes, con el desafío de lograr la máxima
-                                    calidad
-                                    y
-                                    competir con las grandes marcas internacionales.</p>
-                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+            </section>
+            <!--*****************************************SECCION SEGUNDA CARD***************************************-->
+            <section>
+                <div class="container d-flex justify-content-end me-1">
+                    <div class="card mb-3 pt-4 ps-4 mt-4 bg-warning" style="max-width: 900px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 pt-3 pb-3">
+                                <img src="./img/genti1.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nuestro objetivo</h5>
+                                    <p class="card-text">Teniendo como objetivo la mejora continua y abastecer con
+                                        nuestros
+                                        productos a la mayor
+                                        cantidad de Industrias, ademas de la Pesca, también proveemos al sector
+                                        Petrolero,
+                                        Rural
+                                        y
+                                        Naval.</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="productos">
-                <div>
-                    <img class="img-grid" src="./img/gen6.png" alt="">
-                </div>
-                <div>
-                    <p class="parrafos">
-                        En 1993 comenzamos con la fabricación de herrajes navales, desde entonces hemos innovado y
-                        ensayado diferentes tipos de productos. A partir del año 2001 y de acuerdo a las necesidades
-                        del mercado nacional, las actividades de desarrollo de la empresa se centraron exclusivamente en
-                        la fabricación de pastecas y demás herrajes, con el desafío de lograr la máxima calidad y
-                        competir con las grandes marcas internacionales.
-                    </p>
-                </div>
-            </div> -->
-                <div class="card mb-3 pt-4 ps-4 mt-4" style="max-width: 950px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 pt-3 pb-3">
-                            <img src="./img/genti1.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Nuestro objetivo</h5>
-                                <p class="card-text">Teniendo como objetivo la mejora continua y abastecer con nuestros
-                                    productos a la mayor
-                                    cantidad de Industrias, ademas de la Pesca, también proveemos al sector Petrolero,
-                                    Rural
-                                    y
-                                    Naval.</p>
-                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            </section>
+            <!--***********************************************SECCION TERCER CARD CON VIDEO****************************-->
+            <section>
+                <div class="container d-flex justify-content-start p-3 ms-1">
+                    <div class="card mb-0 pt-4 ps-4 bg-warning" style="max-width: 1200px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 pt-2 pb-3">
+                                <video src="./video/285183845_528867978947952_8191597030457709661_n.mp4" width="400px"
+                                    controls autoplay muted></video>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nuestros clientes</h5>
+                                    <p class="card-text">Metalúrgica Gentili lleva sus productos de calidad a todo el
+                                        país
+                                        atendiendo las necesidades
+                                        de
+                                        una amplia variedad de industrias, que requieren de nuestros productos como
+                                        medios
+                                        de
+                                        izaje
+                                        o
+                                        para la elevación o sujeción de cargas. Las industrias que ya emplean nuestros
+                                        productos
+                                        son:
+                                        RURAL - PETROLERA - NAVAL - CONSTRUCCIÓN - MINERÍA</p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="objetivo">
-                <div>
-                    <p class="parrafos">
-                        Teniendo como objetivo la mejora continua y abastecer con nuestros productos a la mayor
-                        cantidad de Industrias, ademas de la Pesca, también proveemos al sector Petrolero, Rural y
-                        Naval.
-                    </p>
-                </div>
-                <div>
-                    <img class="img-grid2" src="./img/WhatsApp Image 2022-06-04 at 11.40.10 PM.jpeg" alt="">
-                </div>
-            </div> -->
-            </div>
-            <div class="container d-flex justify-content-center p-3">
-                <div class="card mb-0 pt-4 ps-4" style="max-width: 1200px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 pt-2 pb-3">
-                            <video src="./video/285183845_528867978947952_8191597030457709661_n.mp4" width="400px"
-                                controls autoplay muted></video>
+            </section>
+            <!--***********************************SECCION NRO 4 CON EL CAROUSEL***********************************-->
+            <section>
+                <div class="container mb-4">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Nuestros clientes</h5>
-                                <p class="card-text">Metalúrgica Gentili lleva sus productos de calidad a todo el país
-                                    atendiendo las necesidades
-                                    de
-                                    una amplia variedad de industrias, que requieren de nuestros productos como medios
-                                    de
-                                    izaje
-                                    o
-                                    para la elevación o sujeción de cargas. Las industrias que ya emplean nuestros
-                                    productos
-                                    son:
-                                    RURAL - PETROLERA - NAVAL - CONSTRUCCIÓN - MINERÍA</p>
-                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./imgCarousel/123.png" class="d-block w-80 m-auto" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imgCarousel/456.png" class="d-block w-80 m-auto" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imgCarousel/123.png" class="d-block w-80 m-auto" alt="...">
                             </div>
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </div>
-            <!-- <div class="video">
-                <div>
-                    <video src="./video/285183845_528867978947952_8191597030457709661_n.mp4" width="500px" controls
-                        autoplay muted></video>
                 </div>
-                <div>
-                    <p class="parrafos">
-                        Metalúrgica Gentili lleva sus productos de calidad a todo el país atendiendo las necesidades
-                        de
-                        una amplia variedad de industrias, que requieren de nuestros productos como medios de izaje
-                        o
-                        para la elevación o sujeción de cargas. Las industrias que ya emplean nuestros productos
-                        son:
-                        RURAL - PETROLERA - NAVAL - CONSTRUCCIÓN - MINERÍA
-                    </p>
-                </div>
-            </div> -->
-            <div class="container mb-4">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./imgCarousel/123.png" class="d-block w-80 m-auto" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imgCarousel/456.png" class="d-block w-80 m-auto" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imgCarousel/123.png" class="d-block w-80 m-auto" alt="...">
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            </div>
+            </section>
         </section>
     </main>
-
+    <!--*********************************************FIN DE MAIN**************************************************-->
     <footer class="footer">
         <div class="contacto">
             <h3>Contacto</h3>
@@ -242,3 +233,57 @@
 </body>
 
 </html>
+<!--*******************************NAVBAR ANTIGUO QUITADO DEL INDEX***********************************-->
+<!-- <nav class="navbar">
+        <ul>
+            <li><a href="./index.html">INICIO</a></li>
+            <li><a href="./empresa.html">EMPRESA</a></li>
+            <li><a href="./productos.html">PRODUCTOS</a></li>
+            <li><a href="./certificaciones.html">CERTIFICACIONES</a></li>
+            <li><a href="./contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav> -->
+<!--********************************SECCIONES QUITADAS DEL MAIN***************************************-->
+<!-- <div class="productos">
+                <div>
+                    <img class="img-grid" src="./img/gen6.png" alt="">
+                </div>
+                <div>
+                    <p class="parrafos">
+                        En 1993 comenzamos con la fabricación de herrajes navales, desde entonces hemos innovado y
+                        ensayado diferentes tipos de productos. A partir del año 2001 y de acuerdo a las necesidades
+                        del mercado nacional, las actividades de desarrollo de la empresa se centraron exclusivamente en
+                        la fabricación de pastecas y demás herrajes, con el desafío de lograr la máxima calidad y
+                        competir con las grandes marcas internacionales.
+                    </p>
+                </div>
+            </div> -->
+<!-- <div class="objetivo">
+                <div>
+                    <p class="parrafos">
+                        Teniendo como objetivo la mejora continua y abastecer con nuestros productos a la mayor
+                        cantidad de Industrias, ademas de la Pesca, también proveemos al sector Petrolero, Rural y
+                        Naval.
+                    </p>
+                </div>
+                <div>
+                    <img class="img-grid2" src="./img/WhatsApp Image 2022-06-04 at 11.40.10 PM.jpeg" alt="">
+                </div>
+            </div> -->
+<!-- <div class="video">
+                <div>
+                    <video src="./video/285183845_528867978947952_8191597030457709661_n.mp4" width="500px" controls
+                        autoplay muted></video>
+                </div>
+                <div>
+                    <p class="parrafos">
+                        Metalúrgica Gentili lleva sus productos de calidad a todo el país atendiendo las necesidades
+                        de
+                        una amplia variedad de industrias, que requieren de nuestros productos como medios de izaje
+                        o
+                        para la elevación o sujeción de cargas. Las industrias que ya emplean nuestros productos
+                        son:
+                        RURAL - PETROLERA - NAVAL - CONSTRUCCIÓN - MINERÍA
+                    </p>
+                </div>
+            </div> -->

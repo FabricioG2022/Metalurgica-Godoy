@@ -5,7 +5,7 @@
 
 .sectionMain {
     background-color: #fffab2;
-    height: 900px;
+    height: 1380px;
 }
 
 .header-flex {
@@ -19,50 +19,44 @@
     padding-bottom: 15px;
 }
 
-.marginBanner {
-    margin: 10px;
-    padding-right: 15px;
-}
-
 .marginCamioneta {
     margin: 10px;
-    padding-right: 20px;
-    transition: all 0.3s;
+    padding-right: 15px;
+    transition: .03s;
 }
 
-.marginCamioneta:hover {
-    transform: scale(1.1);
+.img:hover {
+    transform: scale(1.5px);
 }
 
-.navbar {
+.marginBanner {
+    margin: 10px;
+    padding-left: 15px;
+}
+
+/* .navbar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #ffd07a;
     justify-content: space-around;
     max-width: 100vw;
-}
-/************************************************** BOOTSTRAP ***************************************/
-.navbar .navbar-expand-lg .bg-light {
-    background-color: #ffd07a;
-}
-.card {
-    background-color: #ffd07a;
-    margin-left: 50px;
-}
-/****************************************************BOOTSTRAP**************************************/
-.navbar ul {
+    height: 56px;
+} */
+
+/* .navbar ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 20px;
     max-width: 100vw;
-}
+} */
 
 .navbar li {
     list-style: none;
     padding-left: 15px;
     padding-right: 15px
+
 }
 
 .navbar ul li a {
@@ -73,6 +67,12 @@
     font-family: 'Play', sans-serif;
 }
 
+/**********************************************************BOOTSTRAP***************************************/
+.btn-outline-success {
+    --bs-btn-color: black;
+    --bs-btn-border-color: black;
+}
+/*********************************************************FIN BOOTSTRAP************************************/
 .productos {
     display: grid;
     grid-template-columns: 500px 50%;
@@ -88,6 +88,7 @@
     font-family: 'Play', sans-serif;
     text-align: center;
 }
+
 .objetivo {
     display: grid;
     grid-template-columns: 50% 500px;
@@ -95,13 +96,13 @@
     align-items: center;
 }
 
-.img-grid{
+.img-grid {
     padding-left: 50px;
     width: 400px;
     height: 400px;
 }
 
-.img-grid2{
+.img-grid2 {
     width: 400px;
     height: 400px;
 }
@@ -350,20 +351,36 @@
 
 .textoEmpresa {
     grid-area: textoEmpresa;
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Play', sans-serif;
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    font-size: 20px;
     background-color: #fffab2;
     color: black;
-    font-weight: 550;
+}
+
+.textoEmpresa h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
 }
 
 .textoEmpresa h3 {
     padding-top: 30px;
+    text-align: center;
+}
+
+.textoEmpresa .h3produccion {
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    font-size: 23.4px;
+}
+
+.textoEmpresa .parrafo {
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 550;
 }
 
 .navImagenes {
@@ -386,9 +403,11 @@
     color: black;
     font-weight: 550;
 }
+
 .textoCalidad .politica {
     padding-top: 30px;
 }
+
 .textoCalidad .parrafoFinal {
     padding-bottom: 30px;
 }
@@ -417,7 +436,8 @@
     padding-left: 20px;
     padding-right: 20px;
 }
-.certificaciones img{
+
+.certificaciones img {
     padding-bottom: 30px;
 }
 
@@ -454,11 +474,11 @@
 ::-webkit-input-placeholder {
     color: #808080;
     text-align: center;
-    
- }
+
+}
 
 .contactoPagina .iframe {
-    padding-top: 20px; 
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -468,9 +488,11 @@
         display: flex;
         flex-direction: column;
     }
+
     .header-flex .margin {
         display: none;
     }
+
     .navbar ul {
         display: flex;
         flex-direction: row;
@@ -478,56 +500,72 @@
         justify-content: center;
         font-size: 18px;
     }
+
     .productos {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
+
     .productos .img-grid {
-        padding-left: 100px;
+        padding-left: 65px;
         width: 270px;
         height: 250px;
     }
+
     .productos .parrafos {
         font-size: 15px;
         padding: 7px;
     }
+
     .objetivo {
         display: flex;
         flex-direction: column;
     }
+
     .objetivo .img-grid2 {
         width: 270px;
         height: 250px;
     }
+
     .objetivo .parrafos {
         font-size: 15px;
         padding: 7px;
     }
+
     .video {
         display: flex;
         flex-direction: column;
     }
-    .video video{
+
+    .video video {
         width: 270px;
         padding-top: 7px;
     }
+
     .video .parrafos {
         font-size: 15px;
         padding: 7px;
     }
+
     .footer {
         display: flex;
         flex-direction: column;
         align-items: stretch;
+        max-width: 480px;
     }
+
     .grillaEmpresa {
         grid-template-areas:
-        "textoEmpresa"
-        "navImagenes"
-        "textoCalidad";
+            "textoEmpresa"
+            "navImagenes"
+            "textoCalidad";
         max-height: 2230px;
+        width: 100%;
+        max-width: 480px;
+        word-wrap: break-word;
     }
+
     .navImagenes {
         display: flex;
         flex-direction: column;
@@ -536,43 +574,63 @@
         width: 480px;
         justify-content: center;
     }
+
     .grillaProductos {
         grid-template-areas:
-        "grilletes grilletes grilletes"
-        "pastecas pastecas pastecas"
-        "tensores tensores tensores"
-        "conectores conectores conectores"
-        "giratorios giratorios giratorios"
-        "ganchos ganchos ganchos"
-        "otros-productos otros-productos otros-productos"
-        "catalogo catalogo catalogo";
+            "grilletes grilletes grilletes"
+            "pastecas pastecas pastecas"
+            "tensores tensores tensores"
+            "conectores conectores conectores"
+            "giratorios giratorios giratorios"
+            "ganchos ganchos ganchos"
+            "otros-productos otros-productos otros-productos"
+            "catalogo catalogo catalogo";
     }
+
+    .grillaProductos .giratorios {
+        padding-right: 7px;
+    }
+
+    .grillaProductos .otros-productos {
+        padding-right: 7px;
+    }
+
     .certificaciones {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 80vh;
     }
+
     .certificaciones p {
         text-align: center;
         padding-bottom: 10px;
         padding-top: 0%;
     }
+
     .contactoPagina {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .contactoPagina .datos {
         padding: 10px;
     }
+
     .contactoPagina .iframe {
         padding: 10px;
     }
+
     .contactoPagina iframe {
         height: 300px;
         width: 300px;
     }
+
     .catalogo {
         height: 250px;
+    }
+
+    .textoCalidad {
+        height: 1018px;
     }
 }

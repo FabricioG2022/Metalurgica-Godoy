@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/c1f2ab4877.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,84 +23,129 @@
                     alt="Camioneta empresa"></a>
         </div>
     </header>
-    <nav class="navbar">
-        <ul>
-            <li><a href="./index.html">INICIO</a></li>
-            <li><a href="./empresa.html">EMPRESA</a></li>
-            <li><a href="./productos.html">PRODUCTOS</a></li>
-            <li><a href="./certificaciones.html">CERTIFICACIONES</a></li>
-            <li><a href="./contacto.html">CONTACTO</a></li>
-        </ul>
+    <!--**************************************NAVBAR DE BOOTSTRAP CON DROP********************************-->
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MENU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./empresa.html">EMPRESA</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCTOS
+                        </a>
+                        <!--*******************LISTA DESPLEGABLE DEL DROP CON LOS PRODUCTOS******************-->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Grilletes</a></li>
+                            <li><a class="dropdown-item" href="#">Pastecas</a></li>
+                            <li><a class="dropdown-item" href="#">Tensores</a></li>
+                            <li><a class="dropdown-item" href="#">Conectores</a></li>
+                            <li><a class="dropdown-item" href="#">Giratorios</a></li>
+                            <li><a class="dropdown-item" href="#">Ganchos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Otros productos</a></li>
+                        </ul>
+                        <!--********************FIN LISTA DESPLEGABLE DEL DROP*******************************-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./certificaciones.html">CERTIFICACIONES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <!--***************************************BUTTON SEARCH************************************-->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="BUSCAR" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                </form>
+            </div>
+        </div>
     </nav>
-    <div class="grillaEmpresa">
-        <div class="textoEmpresa">
-            <h2>LA EMPRESA</h2>
-            <P>En el año 1980 nace Metalúrgica Gentili en la ciudad de Mar del plata. En sus comienzos la actividad
-                principal de la empresa fue la venta de aceros en barras, caños, chapas, etc. En base a las
-                necesidades locales, al poco tiempo se agregó un rubro innovador en la ciudad: “el corte a
-                pantógrafo de metales’’ con los sistemas oxicorte y plasmaire.
+    <main>
+        <div class="grillaEmpresa">
+            <div class="textoEmpresa">
+                <h2>LA EMPRESA</h2>
+                <P>En el año 1980 nace Metalúrgica Gentili en la ciudad de Mar del plata. En sus comienzos la actividad
+                    principal de la empresa fue la venta de aceros en barras, caños, chapas, etc. En base a las
+                    necesidades locales, al poco tiempo se agregó un rubro innovador en la ciudad: “el corte a
+                    pantógrafo de metales’’ con los sistemas oxicorte y plasmaire.
 
-                Desde el año 2011 nuestra empresa certifica bajo normas ISO 9001 la comercialización y fabricación
-                de nuestros productos, garantizando al cliente la calidad de los mismos y la política de mejora
-                continua.
+                    Desde el año 2011 nuestra empresa certifica bajo normas ISO 9001 la comercialización y fabricación
+                    de nuestros productos, garantizando al cliente la calidad de los mismos y la política de mejora
+                    continua.
 
-                Desde un comienzo, en la fabricación de nuestros productos, se ha buscado satisfacer las necesidades
-                de los clientes, sumando nuestros conocimientos y experiencia obtenidos, por un lado, del resultado
-                de los productos en el uso diario y, por otro lado, de las múltiples pruebas y ensayos que se
-                realizan en nuestras instalaciones.</P>
-            <h3>PRODUCCION</h3>
-            <p>Las materias primas que principalmente usamos son aceros al carbono tales como SAE 1010, SAE 1045 y
-                SAE 4140 con certificado de calidad y de análisis de composición química de los mismos. Toda la
-                linea de herrajes son cortados para luego calentarlos aproximadamente a 900º C y así ser moldeados y
-                forjados en caliente.
+                    Desde un comienzo, en la fabricación de nuestros productos, se ha buscado satisfacer las necesidades
+                    de los clientes, sumando nuestros conocimientos y experiencia obtenidos, por un lado, del resultado
+                    de los productos en el uso diario y, por otro lado, de las múltiples pruebas y ensayos que se
+                    realizan en nuestras instalaciones.</P>
+                <h3>PRODUCCION</h3>
+                <p>Las materias primas que principalmente usamos son aceros al carbono tales como SAE 1010, SAE 1045 y
+                    SAE 4140 con certificado de calidad y de análisis de composición química de los mismos. Toda la
+                    linea de herrajes son cortados para luego calentarlos aproximadamente a 900º C y así ser moldeados y
+                    forjados en caliente.
 
-                El tratamiento térmico asegura uniformidad en el rendimiento del acero y maximiza sus propiedades.
-                Por ejemplo todos los productos de alta resistencia, después de forjados, son tratados térmicamente
-                con normalizado, temple y revenido. Esto asegura que cada herraje tenga cualidades superiores de
-                resistencia y fatiga ya que los requerimientos de su trabajo exigen esta confiabilidad.
+                    El tratamiento térmico asegura uniformidad en el rendimiento del acero y maximiza sus propiedades.
+                    Por ejemplo todos los productos de alta resistencia, después de forjados, son tratados térmicamente
+                    con normalizado, temple y revenido. Esto asegura que cada herraje tenga cualidades superiores de
+                    resistencia y fatiga ya que los requerimientos de su trabajo exigen esta confiabilidad.
 
-                Todos los productos GENTILI en su etapa final son arenados y pintados con pintura epoxi.</p>
+                    Todos los productos GENTILI en su etapa final son arenados y pintados con pintura epoxi.</p>
+            </div>
+            <div class="navImagenes">
+                <img src="./img/gen2.png" width="20%" height="60%" alt="">
+                <img src="./img/gen3.png" width="20%" height="60%" alt="">
+                <img src="./img/gen5.png" width="20%" height="60%" alt="">
+                <img src="./img/gen7.png" width="20%" height="60%" alt="">
+                <img src="./img/gen6.png" width="20%" height="60%" alt="">
+            </div>
+            <div class="textoCalidad">
+                <h3>CONTROL DE CALIDAD</h3>
+                <p>Contamos con la maquinaria para realizar ensayos de traccion, llevamos al limite a cada uno de
+                    nuestros
+                    productos para garantizar la confiabilidad que usted necesita.
+                    Para probar el material, el diseño y el tratamiento térmico usado en la fabricación, cada producto
+                    una vez terminado ha sido ensayado para comprobar, si posee las propiedades mecánicas necesarias
+                    para garantizar la seguridad y calidad. En este ensayo se somete el producto a la carga de prueba, y
+                    se verifica después del ensayo, que no se modifiquen las dimensiones originales del producto, con
+                    tolerancias mínimas descriptas en las normas internacionales. Se realizan también ensayos a la carga
+                    de rotura para verificar que se cumpla el margen de seguridad de cada producto.
+
+                    Para su mejor atención estamos constantemente en contacto con las necesidades de nuestros clientes.
+                    Contamos con vehículos y personal especializado que lo asesorará y ayudará a elegir el artículo
+                    adecuado para cada industria. Ofrecemos un servicio personalizado para la industria pesquera con
+                    entrega directa en su barco.</p>
+                <h3 class="politica">POLITICA DE CALIDAD</h3>
+                <p class="parrafoFinal">METALURGICA GENTILI se dedica a la Comercialización y fabricación de pastecas y
+                    accesorios para
+                    izajes de carga.
+
+                    La Dirección de GENTILI, establece el Sistema de Gestión de la Calidad como objetivo estratégico y
+                    prioritario, encontrando sus fundamentos y compromisos en:
+                    Priorizar como objetivo la satisfaccion y el cumplimiento de las necesidades de los clientes y demas
+                    partes interesadas.
+                    Proveer productos de alta calidad de terminación, utilizando materiales e insumos de calidad.
+                    Mantener una capacidad de respuesta eficaz.
+                    Prestar un servicio de asesoramiento personalizado, manteniendo relaciones mutuamente beneficiosas a
+                    largo plazo.
+                    Mejorar continuamente la eficacia del SGC con el objeto de aumentar nuestra competitividad en el
+                    mercado.</p>
+            </div>
         </div>
-        <div class="navImagenes">
-            <img src="./img/gen2.png" width="20%" height="60%" alt="">
-            <img src="./img/gen3.png" width="20%" height="60%" alt="">
-            <img src="./img/gen5.png" width="20%" height="60%" alt="">
-            <img src="./img/gen7.png" width="20%" height="60%" alt="">
-            <img src="./img/gen6.png" width="20%" height="60%" alt="">
-        </div>
-        <div class="textoCalidad">
-            <h3>CONTROL DE CALIDAD</h3>
-            <p>Contamos con la maquinaria para realizar ensayos de traccion, llevamos al limite a cada uno de
-                nuestros
-                productos para garantizar la confiabilidad que usted necesita.
-                Para probar el material, el diseño y el tratamiento térmico usado en la fabricación, cada producto
-                una vez terminado ha sido ensayado para comprobar, si posee las propiedades mecánicas necesarias
-                para garantizar la seguridad y calidad. En este ensayo se somete el producto a la carga de prueba, y
-                se verifica después del ensayo, que no se modifiquen las dimensiones originales del producto, con
-                tolerancias mínimas descriptas en las normas internacionales. Se realizan también ensayos a la carga
-                de rotura para verificar que se cumpla el margen de seguridad de cada producto.
-
-                Para su mejor atención estamos constantemente en contacto con las necesidades de nuestros clientes.
-                Contamos con vehículos y personal especializado que lo asesorará y ayudará a elegir el artículo
-                adecuado para cada industria. Ofrecemos un servicio personalizado para la industria pesquera con
-                entrega directa en su barco.</p>
-            <h3 class="politica">POLITICA DE CALIDAD</h3>
-            <p class="parrafoFinal">METALURGICA GENTILI se dedica a la Comercialización y fabricación de pastecas y
-                accesorios para
-                izajes de carga.
-
-                La Dirección de GENTILI, establece el Sistema de Gestión de la Calidad como objetivo estratégico y
-                prioritario, encontrando sus fundamentos y compromisos en:
-                Priorizar como objetivo la satisfaccion y el cumplimiento de las necesidades de los clientes y demas
-                partes interesadas.
-                Proveer productos de alta calidad de terminación, utilizando materiales e insumos de calidad.
-                Mantener una capacidad de respuesta eficaz.
-                Prestar un servicio de asesoramiento personalizado, manteniendo relaciones mutuamente beneficiosas a
-                largo plazo.
-                Mejorar continuamente la eficacia del SGC con el objeto de aumentar nuestra competitividad en el
-                mercado.</p>
-        </div>
-    </div>
+    </main>
     <footer class="footer">
         <section class="contacto">
             <h3>Contacto</h3>
@@ -127,6 +173,7 @@
         </section>
     </footer>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

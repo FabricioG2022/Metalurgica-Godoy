@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/c1f2ab4877.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,56 +23,101 @@
                     alt="Camioneta empresa"></a>
         </div>
     </header>
-    <nav class="navbar">
-        <ul>
-            <li><a href="./index.html">INICIO</a></li>
-            <li><a href="./empresa.html">EMPRESA</a></li>
-            <li><a href="./productos.html">PRODUCTOS</a></li>
-            <li><a href="./certificaciones.html">CERTIFICACIONES</a></li>
-            <li><a href="./contacto.html">CONTACTO</a></li>
-        </ul>
+    <!--**************************************NAVBAR DE BOOTSTRAP CON DROP********************************-->
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MENU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./empresa.html">EMPRESA</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCTOS
+                        </a>
+                        <!--*******************LISTA DESPLEGABLE DEL DROP CON LOS PRODUCTOS******************-->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Grilletes</a></li>
+                            <li><a class="dropdown-item" href="#">Pastecas</a></li>
+                            <li><a class="dropdown-item" href="#">Tensores</a></li>
+                            <li><a class="dropdown-item" href="#">Conectores</a></li>
+                            <li><a class="dropdown-item" href="#">Giratorios</a></li>
+                            <li><a class="dropdown-item" href="#">Ganchos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Otros productos</a></li>
+                        </ul>
+                        <!--********************FIN LISTA DESPLEGABLE DEL DROP*******************************-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./certificaciones.html">CERTIFICACIONES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <!--***************************************BUTTON SEARCH************************************-->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="BUSCAR" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                </form>
+            </div>
+        </div>
     </nav>
-    <div class="grillaProductos">
-        <div class="grilletes">
-            <a href="#"><img src="./img/grillete.jpg" width="55%" alt=""></a>
-            <h3>Grilletes</h3>
-            <p>Amplia gama de grilletes para diversas aplicaciones</p>
+    <main>
+        <div class="grillaProductos">
+            <div class="grilletes">
+                <a href="#"><img src="./img/grillete.jpg" width="55%" alt=""></a>
+                <h3>Grilletes</h3>
+                <p>Amplia gama de grilletes para diversas aplicaciones</p>
+            </div>
+            <div class="pastecas">
+                <a href="#"><img src="./img/pastecas.jpg" width="55%" alt=""></a>
+                <h3>Pastecas</h3>
+                <p>Abribles, de disparo, dobles y muchas mas opciones</p>
+            </div>
+            <div class="tensores">
+                <a href="#"><img src="./img/tensores.jpg" width="55%" alt=""></a>
+                <h3>Tensores</h3>
+                <p>Con terminales 0-0, H-H y 0-H</p>
+            </div>
+            <div class="conectores">
+                <a href="#"><img src="./img/conectores.jpg" width="55%" alt=""></a>
+                <h3>Conectores</h3>
+                <p>Articulacion segura para el manejo de cargas</p>
+            </div>
+            <div class="giratorios">
+                <a href="#"><img src="./img/giratorios.jpg" width="55%" alt=""></a>
+                <h3>Giratorios</h3>
+                <p>De alta resistencia, articulados y de acero inoxidable</p>
+            </div>
+            <div class="ganchos">
+                <a href="#"><img src="./img/ganchos.jpg" width="55%" alt=""></a>
+                <h3>Ganchos</h3>
+                <p>Resistencia y velocidad para acoplar cargas</p>
+            </div>
+            <div class="otros-productos">
+                <a href="#"><img src="./img/otros productos.jpg" width="55%" alt=""></a>
+                <h3>Otros productos</h3>
+                <p>Articulos complementarios para trabajos de izaje</p>
+            </div>
+            <div class="catalogo">
+                <a href="./Catalogo/catalogo_gentili_completo.pdf" download="Catalogo Completo"><img
+                        src="./img/catalogo_b.jpg" width="60%" height="60%" alt=""></a>
+            </div>
         </div>
-        <div class="pastecas">
-            <a href="#"><img src="./img/pastecas.jpg" width="55%" alt=""></a>
-            <h3>Pastecas</h3>
-            <p>Abribles, de disparo, dobles y muchas mas opciones</p>
-        </div>
-        <div class="tensores">
-            <a href="#"><img src="./img/tensores.jpg" width="55%" alt=""></a>
-            <h3>Tensores</h3>
-            <p>Con terminales 0-0, H-H y 0-H</p>
-        </div>
-        <div class="conectores">
-            <a href="#"><img src="./img/conectores.jpg" width="55%" alt=""></a>
-            <h3>Conectores</h3>
-            <p>Articulacion segura para el manejo de cargas</p>
-        </div>
-        <div class="giratorios">
-            <a href="#"><img src="./img/giratorios.jpg" width="55%" alt=""></a>
-            <h3>Giratorios</h3>
-            <p>De alta resistencia, articulados y de acero inoxidable</p>
-        </div>
-        <div class="ganchos">
-            <a href="#"><img src="./img/ganchos.jpg" width="55%" alt=""></a>
-            <h3>Ganchos</h3>
-            <p>Resistencia y velocidad para acoplar cargas</p>
-        </div>
-        <div class="otros-productos">
-            <a href="#"><img src="./img/otros productos.jpg" width="55%" alt=""></a>
-            <h3>Otros productos</h3>
-            <p>Articulos complementarios para trabajos de izaje</p>
-        </div>
-        <div class="catalogo">
-            <a href="./Catalogo/catalogo_gentili_completo.pdf" download="Catalogo Completo"><img
-                    src="./img/catalogo_b.jpg" width="60%" height="60%" alt=""></a>
-        </div>
-    </div>
+    </main>
     <footer class="footer">
         <section class="contacto">
             <h3>Contacto</h3>
@@ -99,6 +145,7 @@
         </section>
     </footer>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
