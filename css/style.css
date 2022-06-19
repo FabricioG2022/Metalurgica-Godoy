@@ -22,17 +22,18 @@
 .marginCamioneta {
     margin: 10px;
     padding-right: 15px;
-    transition: .03s;
+    transition: all 300ms;
 }
 
-.img:hover {
-    transform: scale(1.5px);
+.marginCamioneta:hover {
+    transform: scale(1.2);
 }
 
 .marginBanner {
     margin: 10px;
     padding-left: 15px;
 }
+
 
 /* .navbar {
     display: flex;
@@ -72,6 +73,8 @@
     --bs-btn-color: black;
     --bs-btn-border-color: black;
 }
+
+
 /*********************************************************FIN BOOTSTRAP************************************/
 .productos {
     display: grid;
