@@ -22,6 +22,7 @@
       padding-top: 90px;
       padding-left: 20px;
       padding-right: 20px;
+      @extend %estiloParrafo;
     }
   
     img {

@@ -1,0 +1,5 @@
+@mixin h3-encabezados($colorLetra, $colorFondo) {
+    color: $colorLetra;
+    background-color: $colorFondo;
+
+}
