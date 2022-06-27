@@ -1,0 +1,159 @@
+
+
+  /****************************************************** HTML PRODUCTOS ********************************************/
+  
+  .grillaProductos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas: "grilletes pastecas tensores" "conectores giratorios ganchos" "otros-productos catalogo .";
+    background-color: #fffab2;
+  }
+  
+  .grilletes {
+    grid-area: grilletes;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    color: black;
+    padding-top: 40px;
+    padding-left: 40px;
+    text-align: center;
+  
+    h3 {
+      font-size: 22px;
+    }
+  
+    p {
+      font-size: 20px;
+    }
+  }
+  
+  .pastecas {
+    grid-area: pastecas;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    color: black;
+    padding-top: 40px;
+    padding-left: 40px;
+    text-align: center;
+  
+    h3 {
+      font-size: 22px;
+    }
+  
+    p {
+      font-size: 20px;
+    }
+  }
+  
+  .tensores {
+    grid-area: tensores;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    color: black;
+    padding-top: 40px;
+    padding-left: 40px;
+    text-align: center;
+  
+    h3 {
+      font-size: 22px;
+    }
+  
+    p {
+      font-size: 20px;
+    }
+  }
+  
+  .conectores {
+    grid-area: conectores;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    color: black;
+    padding-top: 40px;
+    padding-left: 40px;
+    text-align: center;
+  
+    h3 {
+      font-size: 22px;
+    }
+  
+    p {
+      font-size: 20px;
+    }
+  }
+  
+  .giratorios {
+    grid-area: giratorios;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    color: black;
+    padding-top: 40px;
+    padding-left: 40px;
+    text-align: center;
+  
+    h3 {
+      font-size: 22px;
+    }
+  
+    p {
+      font-size: 20px;
+    }
+  }
+  
+  .ganchos {
+    grid-area: ganchos;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    color: black;
+    padding-top: 40px;
+    padding-left: 40px;
+    text-align: center;
+  
+    h3 {
+      font-size: 22px;
+    }
+  
+    p {
+      font-size: 20px;
+    }
+  }
+  
+  .otros-productos {
+    grid-area: otros-productos;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    color: black;
+    padding-top: 40px;
+    padding-left: 40px;
+    text-align: center;
+  
+    h3 {
+      font-size: 22px;
+    }
+  
+    p {
+      font-size: 20px;
+      padding-bottom: 40px;
+    }
+  }
+  
+  .catalogo {
+    grid-area: catalogo;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    color: black;
+    padding-top: 40px;
+    padding-left: 40px;
+    text-align: center;
+  
+    h3 {
+      font-size: 22px;
+    }
+  
+    p {
+      font-size: 20px;
+      padding-bottom: 40px;
+    }
+  }

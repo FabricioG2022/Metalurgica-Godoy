@@ -1,0 +1,30 @@
+
+
+  /************************************************************HTML CERTIFICACIONES**************************************/
+  
+  .certificaciones {
+    background-color: #fffab2;
+    font-size: 20px;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Play', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+  
+    p {
+      display: flex;
+      flex-direction: row;
+      padding-top: 90px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    img {
+      padding-bottom: 30px;
+    }
+  }
