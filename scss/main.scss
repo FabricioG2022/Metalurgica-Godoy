@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
+@import './variables/extend';
 @import './variables/mixins';
 @import './secciones/index';
 @import './secciones/certificaciones';
@@ -11,7 +11,8 @@
 @import './secciones/productos';
 
 
-@import './variables/extend';
+
+
 
 
 /******************************************************RESPONSIVE-MEDIA QUERI**************************************/
