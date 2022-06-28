@@ -1,0 +1,7 @@
+Cambios realizados en el proyecto:
+1-Agregue una carpeta pages donde puse todos los html adentro menos el index que quedo por fuera.
+2-Agregue keywords en todos los html, especificando palabras claves para cada html en concreto segun el tema del que trataban.
+3-Agregue etiqueta meta description en cada html con un parrafo corto en cada una que describia de que trataba cada pagina.
+4-Agregue tambien un sitemap para que ayude al buscador.
+5-Modifique etiqueta title para cada html, especificando el nombre de la empresa junto con un guion y el nombre del html en el que se encuentra el usuario, ejemplo:
+Gentili-Empresa, para el html Empresa.
