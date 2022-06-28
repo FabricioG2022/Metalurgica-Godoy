@@ -444,7 +444,7 @@ header .marginCamioneta {
     padding-top: 10px; }
   /*************************************************HTML EMPRESA*************************************************/
   .mainEmpresa {
-    height: 1460px; }
+    height: 1493px; }
   .grillaEmpresa {
     grid-template-areas: "textoEmpresa" "navImagenes" "textoCalidad";
     height: 1420px;
