@@ -191,6 +191,9 @@ header .marginCamioneta {
 .formularioContacto form {
   display: flex;
   flex-direction: column; }
+  .formularioContacto form input {
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
 ::-webkit-input-placeholder {
   color: #808080;
@@ -512,7 +515,7 @@ header .marginCamioneta {
   .textoEmpresa .parrafo {
     font-size: 15px; }
   .textoCalidad {
-    height: 768px;
+    height: 680px;
     font-size: 15px; }
   /***************************************************HTML PRODUCTOS*********************************************/
   .grillaProductos {
