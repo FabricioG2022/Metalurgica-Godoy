@@ -1,159 +1,238 @@
+/****************************************************** HTML PRODUCTOS ********************************************/
 
+.grillaProductos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas: "grilletes pastecas tensores""conectores giratorios ganchos""otros-productos catalogo .";
+  background-color: #fffab2;
+}
 
-  /****************************************************** HTML PRODUCTOS ********************************************/
+.grilletes {
+  grid-area: grilletes;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Play', sans-serif;
+  color: black;
+  padding-top: 40px;
+  padding-left: 40px;
+  text-align: center;
   
-  .grillaProductos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 30px 30px;
-    grid-auto-flow: row;
-    grid-template-areas: "grilletes pastecas tensores" "conectores giratorios ganchos" "otros-productos catalogo .";
-    background-color: #fffab2;
+
+  a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms;
   }
-  
-  .grilletes {
-    grid-area: grilletes;
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Play', sans-serif;
-    color: black;
-    padding-top: 40px;
-    padding-left: 40px;
-    text-align: center;
-  
-    h3 {
-      font-size: 22px;
-    }
-  
-    p {
-      font-size: 20px;
-    }
+  img:hover{
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a;
   }
-  
-  .pastecas {
-    grid-area: pastecas;
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Play', sans-serif;
-    color: black;
-    padding-top: 40px;
-    padding-left: 40px;
-    text-align: center;
-  
-    h3 {
-      font-size: 22px;
-    }
-  
-    p {
-      font-size: 20px;
-    }
+
+  h3 {
+    font-size: 22px;
+    padding-top: 10px;
   }
-  
-  .tensores {
-    grid-area: tensores;
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Play', sans-serif;
-    color: black;
-    padding-top: 40px;
-    padding-left: 40px;
-    text-align: center;
-  
-    h3 {
-      font-size: 22px;
-    }
-  
-    p {
-      font-size: 20px;
-    }
+
+  p {
+    font-size: 20px;
   }
-  
-  .conectores {
-    grid-area: conectores;
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Play', sans-serif;
-    color: black;
-    padding-top: 40px;
-    padding-left: 40px;
-    text-align: center;
-  
-    h3 {
-      font-size: 22px;
-    }
-  
-    p {
-      font-size: 20px;
-    }
+}
+
+.pastecas {
+  grid-area: pastecas;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Play', sans-serif;
+  color: black;
+  padding-top: 40px;
+  padding-left: 40px;
+  text-align: center;
+
+  a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms;
   }
-  
-  .giratorios {
-    grid-area: giratorios;
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Play', sans-serif;
-    color: black;
-    padding-top: 40px;
-    padding-left: 40px;
-    text-align: center;
-  
-    h3 {
-      font-size: 22px;
-    }
-  
-    p {
-      font-size: 20px;
-    }
+  img:hover{
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a;
   }
-  
-  .ganchos {
-    grid-area: ganchos;
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Play', sans-serif;
-    color: black;
-    padding-top: 40px;
-    padding-left: 40px;
-    text-align: center;
-  
-    h3 {
-      font-size: 22px;
-    }
-  
-    p {
-      font-size: 20px;
-    }
+
+  h3 {
+    font-size: 22px;
+    padding-top: 10px;
   }
-  
-  .otros-productos {
-    grid-area: otros-productos;
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Play', sans-serif;
-    color: black;
-    padding-top: 40px;
-    padding-left: 40px;
-    text-align: center;
-  
-    h3 {
-      font-size: 22px;
-    }
-  
-    p {
-      font-size: 20px;
-      padding-bottom: 40px;
-    }
+
+  p {
+    font-size: 20px;
   }
-  
-  .catalogo {
-    grid-area: catalogo;
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Play', sans-serif;
-    color: black;
-    padding-top: 40px;
-    padding-left: 40px;
-    text-align: center;
-  
-    h3 {
-      font-size: 22px;
-    }
-  
-    p {
-      font-size: 20px;
-      padding-bottom: 40px;
-    }
+}
+
+.tensores {
+  grid-area: tensores;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Play', sans-serif;
+  color: black;
+  padding-top: 40px;
+  padding-left: 40px;
+  text-align: center;
+
+  a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms;
   }
+  img:hover{
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a;
+  }
+
+  h3 {
+    font-size: 22px;
+    padding-top: 10px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.conectores {
+  grid-area: conectores;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Play', sans-serif;
+  color: black;
+  padding-top: 40px;
+  padding-left: 40px;
+  text-align: center;
+
+  a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms;
+  }
+  img:hover{
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a;
+  }
+
+  h3 {
+    font-size: 22px;
+    padding-top: 10px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.giratorios {
+  grid-area: giratorios;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Play', sans-serif;
+  color: black;
+  padding-top: 40px;
+  padding-left: 40px;
+  text-align: center;
+
+  a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms;
+  }
+  img:hover{
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a;
+  }
+
+  h3 {
+    font-size: 22px;
+    padding-top: 10px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.ganchos {
+  grid-area: ganchos;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Play', sans-serif;
+  color: black;
+  padding-top: 40px;
+  padding-left: 40px;
+  text-align: center;
+
+  a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms;
+  }
+  img:hover{
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a;
+  }
+
+  h3 {
+    font-size: 22px;
+    padding-top: 10px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.otros-productos {
+  grid-area: otros-productos;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Play', sans-serif;
+  color: black;
+  padding-top: 40px;
+  padding-left: 40px;
+  text-align: center;
+
+  a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms;
+  }
+  img:hover{
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a;
+  }
+
+  h3 {
+    font-size: 22px;
+    padding-top: 10px;
+  }
+
+  p {
+    font-size: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+.catalogo {
+  grid-area: catalogo;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Play', sans-serif;
+  color: black;
+  padding-top: 40px;
+  padding-left: 40px;
+  text-align: center;
+
+  a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms;
+  }
+  img:hover{
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a;
+  }
+
+  h3 {
+    font-size: 22px;
+    padding-top: 10px;
+  }
+
+  p {
+    font-size: 20px;
+    padding-bottom: 40px;
+  }
+}

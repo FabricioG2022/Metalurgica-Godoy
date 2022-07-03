@@ -2,12 +2,6 @@
   margin: 0;
   padding: 0; }
 
-.certificaciones p {
-  text-align: center;
-  font-weight: 200;
-  font-size: 18px;
-  font-family: 'Goldman', cursive; }
-
 /********************************************************HEADER****************************************************/
 header .header-flex {
   display: flex;
@@ -53,6 +47,9 @@ header .marginCamioneta {
     font-weight: 800;
     font-family: 'Orbitron', sans-serif;
     font-family: 'Play', sans-serif; }
+  .navbar ul li a:hover {
+    background-color: gold;
+    color: black; }
 
 /***********************************************************MAIN***************************************************/
 /**************************************************PRIMERA SECCION PRODUCTOS***************************************/
@@ -160,8 +157,12 @@ header .marginCamioneta {
     display: flex;
     flex-direction: row;
     padding-top: 90px;
-    padding-left: 20px;
-    padding-right: 20px; }
+    padding-left: 50px;
+    padding-right: 50px; }
+  .certificaciones a {
+    transition: all 300ms; }
+  .certificaciones img:hover {
+    transform: scale(106%); }
   .certificaciones img {
     padding-bottom: 30px; }
 
@@ -218,13 +219,13 @@ header .marginCamioneta {
   .textoEmpresa h2 {
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 10px;
     font-family: 'Orbitron', sans-serif;
     font-family: 'Play', sans-serif; }
   .textoEmpresa h3 {
     padding-top: 20px;
-    text-align: center;
-    color: white;
-    background-color: black; }
+    padding-bottom: 10px;
+    text-align: center; }
   .textoEmpresa .h3produccion {
     font-family: 'Orbitron', sans-serif;
     font-family: 'Play', sans-serif;
@@ -232,8 +233,8 @@ header .marginCamioneta {
   .textoEmpresa .parrafo {
     font-family: 'Orbitron', sans-serif;
     font-family: 'Play', sans-serif;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     text-align: center;
     font-size: 20px;
     font-weight: 550; }
@@ -249,8 +250,8 @@ header .marginCamioneta {
   grid-area: textoCalidad;
   font-family: 'Orbitron', sans-serif;
   font-family: 'Play', sans-serif;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   text-align: center;
   font-size: 20px;
   background-color: #fffab2;
@@ -258,6 +259,8 @@ header .marginCamioneta {
   font-weight: 550; }
   .textoCalidad .politica {
     padding-top: 20px; }
+  .textoCalidad h3 {
+    padding-bottom: 10px; }
   .textoCalidad .parrafoFinal {
     padding-bottom: 30px; }
 
@@ -279,8 +282,15 @@ header .marginCamioneta {
   padding-top: 40px;
   padding-left: 40px;
   text-align: center; }
+  .grilletes a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms; }
+  .grilletes img:hover {
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a; }
   .grilletes h3 {
-    font-size: 22px; }
+    font-size: 22px;
+    padding-top: 10px; }
   .grilletes p {
     font-size: 20px; }
 
@@ -292,8 +302,15 @@ header .marginCamioneta {
   padding-top: 40px;
   padding-left: 40px;
   text-align: center; }
+  .pastecas a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms; }
+  .pastecas img:hover {
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a; }
   .pastecas h3 {
-    font-size: 22px; }
+    font-size: 22px;
+    padding-top: 10px; }
   .pastecas p {
     font-size: 20px; }
 
@@ -305,8 +322,15 @@ header .marginCamioneta {
   padding-top: 40px;
   padding-left: 40px;
   text-align: center; }
+  .tensores a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms; }
+  .tensores img:hover {
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a; }
   .tensores h3 {
-    font-size: 22px; }
+    font-size: 22px;
+    padding-top: 10px; }
   .tensores p {
     font-size: 20px; }
 
@@ -318,8 +342,15 @@ header .marginCamioneta {
   padding-top: 40px;
   padding-left: 40px;
   text-align: center; }
+  .conectores a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms; }
+  .conectores img:hover {
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a; }
   .conectores h3 {
-    font-size: 22px; }
+    font-size: 22px;
+    padding-top: 10px; }
   .conectores p {
     font-size: 20px; }
 
@@ -331,8 +362,15 @@ header .marginCamioneta {
   padding-top: 40px;
   padding-left: 40px;
   text-align: center; }
+  .giratorios a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms; }
+  .giratorios img:hover {
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a; }
   .giratorios h3 {
-    font-size: 22px; }
+    font-size: 22px;
+    padding-top: 10px; }
   .giratorios p {
     font-size: 20px; }
 
@@ -344,8 +382,15 @@ header .marginCamioneta {
   padding-top: 40px;
   padding-left: 40px;
   text-align: center; }
+  .ganchos a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms; }
+  .ganchos img:hover {
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a; }
   .ganchos h3 {
-    font-size: 22px; }
+    font-size: 22px;
+    padding-top: 10px; }
   .ganchos p {
     font-size: 20px; }
 
@@ -357,8 +402,15 @@ header .marginCamioneta {
   padding-top: 40px;
   padding-left: 40px;
   text-align: center; }
+  .otros-productos a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms; }
+  .otros-productos img:hover {
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a; }
   .otros-productos h3 {
-    font-size: 22px; }
+    font-size: 22px;
+    padding-top: 10px; }
   .otros-productos p {
     font-size: 20px;
     padding-bottom: 40px; }
@@ -371,8 +423,15 @@ header .marginCamioneta {
   padding-top: 40px;
   padding-left: 40px;
   text-align: center; }
+  .catalogo a {
+    box-shadow: 10px 5px 10px #80839a;
+    transition: all 300ms; }
+  .catalogo img:hover {
+    transform: scale(106%);
+    box-shadow: 10px 5px 10px #80839a; }
   .catalogo h3 {
-    font-size: 22px; }
+    font-size: 22px;
+    padding-top: 10px; }
   .catalogo p {
     font-size: 20px;
     padding-bottom: 40px; }
@@ -468,7 +527,7 @@ header .marginCamioneta {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh; }
+    height: 90vh; }
     .certificaciones p {
       text-align: center;
       padding-bottom: 10px;
