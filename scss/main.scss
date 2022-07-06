@@ -46,14 +46,16 @@
 
     /*******************************************************MAIN***************************************************/
     /************************************************PRIMERA SECCION PRODUCTOS*************************************/
-
+    .sectionMain {
+        height: 4840px;
+    }
     .productos {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
 
         .img-grid {
-            padding-left: 70px;
+            padding-left: 48px;
             width: 270px;
             height: 250px;
         }
@@ -104,6 +106,22 @@
         }
     }
 
+    //******************************************CUARTA SECCION PRESUPUESTO*****************************************/
+    .presupuesto {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .textoPresupuesto {
+            font-size: 22px;
+            text-align: center;
+            padding-right: 20px;
+        }
+        button {
+            margin-bottom: 22px;
+        }
+    }
+    //*****************************************QUINTA SECCION GALERIA IMG******************************************/
+    
     /******************************************************FOOTER**************************************************/
 
     .footer {

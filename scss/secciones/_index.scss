@@ -64,7 +64,7 @@ header {
     ul li a:hover {
         background-color: gold;
         color: black;
-        
+
     }
 }
 
@@ -75,6 +75,7 @@ header {
 
 .sectionMain {
     background-color: #fffab2;
+    height: 290vh;
 }
 
 .productos {
@@ -83,6 +84,7 @@ header {
     justify-content: space-around;
     align-items: center;
     padding-top: 20px;
+   
 }
 
 .parrafos {
@@ -123,6 +125,75 @@ header {
     padding-bottom: 20px;
 }
 
+//************************************************CUARTA SECCION***************************************************/
+.presupuesto {
+    background-color: #80839a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25vh;
+
+
+    .textoPresupuesto {
+        font-size: 40px;
+        color: white;
+        font-weight: 700px;
+        margin-top: 40px;
+        margin-left: 50px;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .buttonPresupuesto {
+        font-size: 20px;
+        height: 7vh;
+        cursor: pointer;
+        margin-top: 20px;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Orbitron', sans-serif;
+
+        a {
+            text-decoration: none;
+            color: black;
+            transition: all 1ms;
+        }
+
+        a:hover {
+            background-color: gold;
+            font-size: 23px;
+        }
+    }
+
+}
+
+//***************************************************QUINTA SECCION************************************************/
+
+h1 {
+     text-align: center;
+     position: relative;
+     width: 80%;
+     margin: 30px auto;
+     font-size: 40px;
+     font-family: 'Orbitron', sans-serif;
+     
+ }
+
+.img-gallery {
+    width: 80%;
+    margin: 50px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    gap: 30px;
+    img {
+        width: 100%;
+        cursor: pointer;
+        transition: 1s;
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
+}
 
 
 /**********************************************************FOOTER**************************************************/

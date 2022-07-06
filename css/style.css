@@ -54,7 +54,8 @@ header .marginCamioneta {
 /***********************************************************MAIN***************************************************/
 /**************************************************PRIMERA SECCION PRODUCTOS***************************************/
 .sectionMain {
-  background-color: #fffab2; }
+  background-color: #fffab2;
+  height: 290vh; }
 
 .productos {
   display: grid;
@@ -93,6 +94,57 @@ header .marginCamioneta {
   justify-content: space-around;
   align-items: center;
   padding-bottom: 20px; }
+
+.presupuesto {
+  background-color: #80839a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 25vh; }
+  .presupuesto .textoPresupuesto {
+    font-size: 40px;
+    color: white;
+    font-weight: 700px;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-family: 'Orbitron', sans-serif; }
+  .presupuesto .buttonPresupuesto {
+    font-size: 20px;
+    height: 7vh;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Orbitron', sans-serif; }
+    .presupuesto .buttonPresupuesto a {
+      text-decoration: none;
+      color: black;
+      transition: all 1ms; }
+    .presupuesto .buttonPresupuesto a:hover {
+      background-color: gold;
+      font-size: 23px; }
+
+h1 {
+  text-align: center;
+  position: relative;
+  width: 80%;
+  margin: 30px auto;
+  font-size: 40px;
+  font-family: 'Orbitron', sans-serif; }
+
+.img-gallery {
+  width: 80%;
+  margin: 50px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px; }
+  .img-gallery img {
+    width: 100%;
+    cursor: pointer;
+    transition: 1s; }
+  .img-gallery img:hover {
+    transform: scale(1.1); }
 
 /**********************************************************FOOTER**************************************************/
 .footer {
@@ -459,12 +511,14 @@ header .marginCamioneta {
     font-size: 18px; }
   /*******************************************************MAIN***************************************************/
   /************************************************PRIMERA SECCION PRODUCTOS*************************************/
+  .sectionMain {
+    height: 4840px; }
   .productos {
     display: flex;
     flex-direction: column;
     align-items: flex-start; }
     .productos .img-grid {
-      padding-left: 70px;
+      padding-left: 48px;
       width: 270px;
       height: 250px; }
     .productos .parrafos {
@@ -496,6 +550,16 @@ header .marginCamioneta {
       padding: 7px;
       padding-left: 15px;
       padding-right: 15px; }
+  .presupuesto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    .presupuesto .textoPresupuesto {
+      font-size: 22px;
+      text-align: center;
+      padding-right: 20px; }
+    .presupuesto button {
+      margin-bottom: 22px; }
   /******************************************************FOOTER**************************************************/
   .footer {
     display: flex;
