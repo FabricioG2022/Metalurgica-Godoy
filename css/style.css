@@ -15,7 +15,11 @@ header .header-flex {
 
 header .margin {
   margin: 10px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  transition: all 300ms;
+  cursor: pointer; }
+  header .margin:hover {
+    transform: scale(1.1); }
 
 header .marginCamioneta {
   transition: all 300ms;
@@ -55,7 +59,7 @@ header .marginCamioneta {
 /**************************************************PRIMERA SECCION PRODUCTOS***************************************/
 .sectionMain {
   background-color: #fffab2;
-  height: 290vh; }
+  height: 280vh; }
 
 .productos {
   display: grid;
