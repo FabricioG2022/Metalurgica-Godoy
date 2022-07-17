@@ -59,7 +59,7 @@ header .marginCamioneta {
 /**************************************************PRIMERA SECCION PRODUCTOS***************************************/
 .sectionMain {
   background-color: #fffab2;
-  height: 280vh; }
+  height: 300vh; }
 
 .productos {
   display: grid;
